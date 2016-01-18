@@ -31,11 +31,14 @@ const char O2_OAUTH_VERFIER[] = "oauth_verifier";
 const char O2_OAUTH2_RESPONSE_TYPE[] = "response_type";
 const char O2_OAUTH2_CLIENT_ID[] = "client_id";
 const char O2_OAUTH2_CLIENT_SECRET[] = "client_secret";
+const char O2_OAUTH2_USERNAME[] = "username";
+const char O2_OAUTH2_PASSWORD[] = "password";
 const char O2_OAUTH2_REDIRECT_URI[] = "redirect_uri";
 const char O2_OAUTH2_SCOPE[] = "scope";
 const char O2_OAUTH2_CODE[] = "code";
 const char O2_OAUTH2_TOKEN[] = "token";
 const char O2_OAUTH2_GRANT_TYPE[] = "grant_type";
+const char O2_OAUTH2_API_KEY[] = "api_key";
 // OAuth 2 Response Parameters
 const char O2_OAUTH2_ACCESS_TOKEN[] = "access_token";
 const char O2_OAUTH2_REFRESH_TOKEN[] = "refresh_token";
