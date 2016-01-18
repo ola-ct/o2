@@ -35,8 +35,9 @@ O1Requestor::O1Requestor(QNetworkAccessManager *manager, O1 *authenticator, QObj
 QNetworkReply *O1Requestor::get(const QNetworkRequest &req, const QList<O1RequestParameter> &signingParameters) {
     QNetworkRequest request = setup(req, signingParameters, QNetworkAccessManager::GetOperation);
     QUrlQuery query;
-    foreach (O1RequestParameter reqParam, signingParameters)
-      query.addQueryItem(reqParam.name, reqParam.value);
+    foreach (O1RequestParameter reqParam, signingParameters) {
+        query.addQueryItem(reqParam.name, reqParam.value);
+    }
     QUrl urlWithQuery = request.url();
     urlWithQuery.setQuery(query);
     request.setUrl(urlWithQuery);
